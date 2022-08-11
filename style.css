@@ -11,14 +11,101 @@
 }
 
 #image-section {
-    width: 30%;
-    border: 1px solid red;
+    width: 40%;
+    position: relative;
+}
+.desc-box {
+    padding-top: 100px;
+    padding-left: 2rem;;
 }
 
 #form-section {
-    width: 70%;
-    border: 1px solid red;
+    width: 60%;
+    height: 120vh;
+    background-color: #ede9e8;
+}
+.desc {
+    font-size: 2rem
 }
 img {
     width: 100%;
+    height: 120vh;
+}
+
+input[type=text],input[type=email],input[type=password], input[type=number] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input:focus{
+    border-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.error{
+    border-color: red;
+    color: red;
+}
+
+
+table {
+    width: 90%;
+}
+.input-box {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form { 
+    padding: 2rem;
+}
+button {
+    width: 20%;
+    padding: 12px 20px;
+    margin-left: 2rem;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    border-radius: 6px;
+}
+button:active {
+    background-color: blue;
+}
+label { 
+    font-weight: bold;
+}
+.already {
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+span {
+    color: darkblue;
+    font-weight: bolder;
+}
+.box {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.8);
+}
+.logo img {
+    height: 200px;
+    width: 200px;
+}
+.logo {
+    color: white;
+    font-size: 5rem;
+}
+.c {
+    font-size: 20rem;
+}
+.logo-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.logo-shade {
+    color: blue;
 }

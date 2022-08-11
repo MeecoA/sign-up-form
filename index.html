@@ -6,49 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>    
 </head>
 <body>
     <div id="main">
-        <div id="image-section">    
-            <img src="image.jpg" alt="Photo of Codes">
+        <div id="image-section">
+            <div class="bg-photo"><img src="image.jpg" alt="Photo of Codes"></div>    
+            <div class="box">
+                <div class="logo-holder">
+                    <div class="logo c"><span class="logo-shade">M</span>  </div>
+                    <div class="logo"> <span class="logo-shade">EE</span>CORP.</div>
+                </div>
+            </div>
         </div>
         <div id="form-section">
+            <div class="desc-box">
             <p class="desc">This is not a real online service! You know you need
                 something like this in your life to help you realize your deepest dreams.
-                Signup now to get started. 
             </p>
-            <p>You <i>know</i> you want to.</p>
-           <form action="post">
-            <caption>Sign Up Now!</caption>
+            <p class="desc">Signup now to get started. </p>
+            <br>
+            <p class="desc">You <i>know</i> you want to.</p>
+            <br>
+            <br>
+            <br>
+            </div>
+            <div class="input-box">
+           <form action="#">
+            <h1>Sign Up Now!</h1>
+            <br>
             <table>
                 <tr>
                     <td><label for="firsName">FIRST NAME</label><br>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required>
                     </td>
                     <td><label for="lastName">LAST NAME</label><br>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="firsName">EMAIL</label><br>
-                        <input type="text" name="firstName" id="firstName">
+                    <td><label for="email">EMAIL</label><br>
+                        <input type="email" name="email" id="email" required>
                     </td>
-                    <td><label for="lastName">PHONE NUMBER</label><br>
-                        <input type="text" name="lastName" id="lastName">
+                    <td><label for="phone">PHONE NUMBER</label><br>
+                        <input type="number" name="phone" id="phone">
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="firsName">PASSWORD</label><br>
-                        <input type="text" name="firstName" id="firstName">
+                    <td><label for="pword">PASSWORD</label><br>
+                        <input type="password" name="pword" id="pword" required>
                     </td>
-                    <td><label for="lastName">CONFIRM PASSWORD</label><br>
-                        <input type="text" name="lastName" id="lastName">
+                    <td><label for="cpword">CONFIRM PASSWORD</label><br>
+                        <input type="password" name="cpword" id="cpword" required>
                     </td>
                 </tr>
             </table>
-                <button type="submit">CREATE ACCOUNT</button>
+            <div class="error"></div>
+         </div>
+         <br>
+         <br>
+                <button type="submit" id="submit">CREATE ACCOUNT</button>
            </form>
-           <p>Already have an account? <span>Log in</span></p>
+           <p class="already">Already have an account? <span>Log in</span></p>
         </div>
     </div>
 </body>
